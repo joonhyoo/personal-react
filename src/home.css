@@ -1,0 +1,70 @@
+.home-container {
+  height: 100vh;
+  background: rgb(148,187,233);
+  background: radial-gradient(circle, rgba(174,238,213,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.home-text {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 100px;
+  animation: fadeIn ease-in-out 2s 0.5s forwards;
+  opacity: 0;
+}
+
+.intro-text {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  overflow: hidden;
+  line-height: 1;
+}
+
+.intro-text span {
+  display: block;
+  opacity: 0;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 1s forwards;
+}
+
+#cycle:after {
+  animation-name:cycle;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  content: "";
+}
+
+@keyframes cycle {
+  0% {
+    content: "a Software Engineer";
+  }
+  33% {
+    content: "a Volleyball Enthusiast";
+  }
+  66% {
+    content: "an Avid Learner";
+  }
+  100% {
+    content: "a Software Engineer";
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0,300%);
+  }
+  100% {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}

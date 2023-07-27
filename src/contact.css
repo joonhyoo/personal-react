@@ -1,0 +1,7 @@
+.socials {
+  margin-top: 10vh;
+  border: 1px solid black;
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+}
