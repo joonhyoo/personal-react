@@ -14,7 +14,7 @@ function Projects() {
           title={"Personal Website"}
           image={reactSite}
           description={"Personal portfolio written with React"}
-          github={"https://github.com/joonhyoo/react-site"}
+          github={"https://github.com/joonhyoo/personal-react"}
         />
         <Project
           title={"Project 2"}
