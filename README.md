@@ -5,3 +5,5 @@ You should be able to view the page via [joon.dev](https://joon.dev), but if not
 
 If you are reading this and have any comments/notes you want to leave I'd be very happy to hear them.
 I am always learning :)
+
+This page is WIP and I'm updating it as I learn things or want to make changes to it.
