@@ -14,6 +14,7 @@ function About() {
           technologies.
         </p>
       </div>
+      <div className="about-heading"></div>
     </div>
   );
 }

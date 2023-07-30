@@ -8,9 +8,15 @@
 }
 
 .projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5em;
+}
+
+/* .projects {
   margin: auto;
   width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5em;
-}
+} */
