@@ -13,14 +13,36 @@
 }
 
 .about-text-container {
-  background-color: white;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   margin: auto;
-  padding: 30px;
-  border-radius: 5px;
   width: 80%;
 }
 
-.about-container p {
-  font-size: 1.3em;
+.about-image-container {
+  display: none;
+}
+
+.about-text {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: white;
+  padding: 30px;
+  font-size: 1.45em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .about-text-container {
+    width: 900px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 2em;
+  }
+  .about-image-container {
+    display: contents;
+  }
+  .about-image {
+    max-width: 100%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    object-fit: cover;
+  }
 }
