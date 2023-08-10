@@ -17,6 +17,12 @@
   cursor: pointer;
 }
 
+.github-button-container,
+.linkedin-button-container {
+  margin: auto;
+}
+
+
 .email:hover,
 .github-button:hover,
 .linkedin-button:hover {

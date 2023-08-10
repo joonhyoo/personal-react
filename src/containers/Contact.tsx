@@ -6,8 +6,18 @@ function Contact() {
   return (
     <div className="socials">
       <p className="email">joonhyoo@protonmail.com</p>
-      <img className="github-button" src={githubLogo} />
-      <img className="linkedin-button" src={linkedinLogo} />
+      <a
+        href="https://www.linkedin.com/in/joonhyoo/"
+        className="github-button-container"
+      >
+        <img className="github-button" src={githubLogo} />
+      </a>
+      <a
+        href="https://github.com/joonhyoo"
+        className="linkedin-button-container"
+      >
+        <img className="linkedin-button" src={linkedinLogo} />
+      </a>
     </div>
   );
 }
