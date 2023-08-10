@@ -21,9 +21,16 @@
   display: none;
 }
 
+.about-image {
+  max-width: 100%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  object-fit: cover;
+}
+
 .about-text {
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
   background-color: white;
   padding: 30px;
   font-size: 1.45em;
@@ -38,11 +45,5 @@
   }
   .about-image-container {
     display: contents;
-  }
-  .about-image {
-    max-width: 100%;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    object-fit: cover;
   }
 }

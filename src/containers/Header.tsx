@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import "./header.css";
+import "../styles/header.css";
 
 function Header() {
   return (

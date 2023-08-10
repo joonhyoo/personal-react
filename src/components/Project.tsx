@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import "./project.css";
+import "../styles/project.css";
 
 interface Props {
   image: string;

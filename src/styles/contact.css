@@ -1,0 +1,24 @@
+.socials {
+  box-shadow: 0px 5px 18px #888888;
+  height: 70px;
+  display: flex;
+}
+
+.linkedin-button,
+.github-button {
+  height: 40px;
+}
+
+.email,
+.linkedin-button,
+.github-button {
+  margin: auto;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+
+.email:hover,
+.github-button:hover,
+.linkedin-button:hover {
+  transform: scale(1.1)
+}

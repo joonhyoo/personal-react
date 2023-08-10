@@ -1,5 +1,5 @@
-import "./about.css";
-import me1 from "./assets/me-1.jpeg";
+import "../styles/about.css";
+import me1 from "../assets/me-1.jpeg";
 
 function About() {
   return (

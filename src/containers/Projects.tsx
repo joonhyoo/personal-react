@@ -1,9 +1,9 @@
-import Project from "./Project";
-import "./projects.css";
-import reactSite from "./assets/React-Site.jpg";
-import catImage1 from "./assets/cat-1.jpeg";
-import catImage2 from "./assets/cat-2.jpeg";
-import catImage3 from "./assets/cat-3.jpeg";
+import Project from "../components/Project";
+import "../styles/projects.css";
+import reactSite from "../assets/React-Site.jpg";
+import catImage1 from "../assets/cat-1.jpeg";
+import catImage2 from "../assets/cat-2.jpeg";
+import catImage3 from "../assets/cat-3.jpeg";
 
 function Projects() {
   return (

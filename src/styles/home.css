@@ -1,5 +1,5 @@
 .home-container {
-  height: 100vh;
+  height: 100svh;
   background: rgb(148,187,233);
   background: radial-gradient(circle, rgba(174,238,213,1) 0%, rgba(148,187,233,1) 100%);
 }
