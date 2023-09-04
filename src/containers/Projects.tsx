@@ -1,5 +1,6 @@
 import Project from "../components/Project";
 import "../styles/projects.css";
+import "../styles/general.css";
 import reactSite from "../assets/React-Site.jpg";
 import gymDolphin from "../assets/gym-dolphin.png";
 // import catImage2 from "../assets/cat-2.jpeg";
@@ -7,8 +8,8 @@ import gymDolphin from "../assets/gym-dolphin.png";
 
 function Projects() {
   return (
-    <div className="projects-container">
-      <h1 className="projects-heading">Projects</h1>
+    <div className="projects-container section-container light">
+      <h1 className="section-heading">Projects</h1>
       <div className="projects">
         <Project
           title={"Personal Website"}

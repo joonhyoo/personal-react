@@ -1,20 +1,35 @@
 import About from "./About";
+import Blogs from "./Blogs";
 import Contact from "./Contact";
 import Header from "./Header";
 import Home from "./Home";
 import Projects from "./Projects";
+import BlogPage from "./BlogPage";
 
 import { Fragment } from "react";
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
-    <Fragment>
-      <Header />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
-    </Fragment>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Fragment>
+              <Header />
+              <Home />
+              <About />
+              <Blogs />
+              <Projects />
+              <Contact />
+            </Fragment>
+          }
+        />
+        <Route path="/blogs" element={<BlogPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

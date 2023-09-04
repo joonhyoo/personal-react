@@ -1,0 +1,25 @@
+.blog-container {
+}
+
+.blog-preview {
+  display: grid;
+  gap: 15px;
+  margin: auto;
+  width: 80%;
+}
+
+.post {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.post:hover {
+  background-color: #d8d2da;
+}
+
+@media only screen and (min-width: 1000px) {
+  .blog-preview {
+    width: 900px;
+  }
+}

@@ -1,0 +1,53 @@
+.section-container {
+  padding-bottom: 80px;
+}
+
+.section-container > * {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 3em;
+  padding: 50px 0px;
+}
+
+.section-subheading {
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+
+.primary {
+  background-color: #374a67;
+}
+
+.secondary {
+  background-color: #616283;
+}
+
+.tertiary {
+  background-color: #4C5675;
+}
+
+.dark {
+  background-color: #0e1116;
+}
+
+.light {
+  background-color: #F3EFF5;
+}
+
+.misc {
+  background-color: #AAA9BC;
+}
+
+.text-dark {
+  color: #0e1116;
+}
+
+.text-light {
+  color: #F3EFF5;
+}
+
+.text-misc {
+  color: #AAA9BC;
+}
