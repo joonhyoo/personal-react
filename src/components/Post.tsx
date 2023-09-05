@@ -20,8 +20,11 @@ function Post(props: Props) {
   }
   return (
     <div className="post light" onClick={handleClick}>
-      <h1>{title}</h1>
-      <p>{date}</p>
+      <div className="post-info">
+        <a />
+        <h1>{title}</h1>
+        <p className="text-misc">{date}</p>
+      </div>
       <p>{content}</p>
     </div>
   );

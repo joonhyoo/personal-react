@@ -1,8 +1,14 @@
 [
   {
     "title": "first post",
-    "content": "this is my first post",
-    "date": "feb 2023",
+    "content": "This is my first post, I've started developing this site to work on my skills and learn! I've already learnt alot by just building this. An issue I've encountered with my current version of blog posts are that I'm using JSON, so the format of my posts are pretty poor.",
+    "date": "September 5th 2023",
     "id": 1
+  },
+  {
+    "title": "weird blog bug",
+    "content": "So just following me writing the first post, my blog page broke. I'm not entirely sure why but I guess it has to do with the number of posts that I have. I'm thinking in future I'll write my posts in a local text file and then have a js function to convert it into this json format and auto id and timestamp it for me.",
+    "date": "September 5th 2023",
+    "id": 2
   }
 ]
