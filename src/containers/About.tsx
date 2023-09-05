@@ -1,11 +1,13 @@
 import "../styles/about.css";
 import "../styles/general.css";
-import me1 from "../assets/me-1.jpeg";
+import me1 from "../assets/images/me-1.jpeg";
 
 function About() {
   return (
-    <div className="about-container section-container misc">
-      <h1 className="section-heading text-dark">About Me</h1>
+    <div className="section-container misc">
+      <h1 className="section-heading text-dark anchor" id="about">
+        About Me
+      </h1>
       <div className="about-text-container">
         <div className="about-text text-dark light">
           <p>

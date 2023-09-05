@@ -1,14 +1,12 @@
 import Project from "../components/Project";
 import "../styles/projects.css";
 import "../styles/general.css";
-import reactSite from "../assets/React-Site.jpg";
-import gymDolphin from "../assets/gym-dolphin.png";
-// import catImage2 from "../assets/cat-2.jpeg";
-// import catImage3 from "../assets/cat-3.jpeg";
+import reactSite from "../assets/images/React-Site.jpg";
+import gymDolphin from "../assets/images/gym-dolphin.png";
 
 function Projects() {
   return (
-    <div className="projects-container section-container light">
+    <div className="section-container light anchor" id="projects">
       <h1 className="section-heading">Projects</h1>
       <div className="projects">
         <Project
@@ -23,18 +21,6 @@ function Projects() {
           description={"Web App clone of mobile app GymShark"}
           github={"https://github.com/joonhyoo/gymdolphin"}
         />
-        {/* <Project
-          title={"Project 3"}
-          image={catImage2}
-          description={"basic project"}
-          github={"some github repo"}
-        />
-        <Project
-          title={"Project 4"}
-          image={catImage3}
-          description={"basic project"}
-          github={"some github repo"}
-        /> */}
       </div>
     </div>
   );

@@ -16,6 +16,11 @@
   padding-bottom: 20px;
 }
 
+.anchor{
+  scroll-margin-top: 10vh;
+}
+
+
 .primary {
   background-color: #374a67;
 }
