@@ -15,7 +15,7 @@ export interface Props {
 function Post(props: Props) {
   const { title, content, date } = props.post;
   const [desc, setContent] = useState(
-    content.split(" ").slice(0, 20).join(" ") + " . . ."
+    content.split(" ").slice(0, 19).join(" ") + " . . ."
   );
   const [isExpanded, setIsExpanded] = useState(false);
   // handleClick works weird because react updates things after the function is fully run

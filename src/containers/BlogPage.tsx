@@ -1,18 +1,39 @@
+import { useState } from "react";
 import blogs from "../assets/posts/blog.json";
 import Post from "../components/Post";
+import { Button } from "react-bootstrap";
 
 function BlogPage() {
-  // Assuming blogs is an array of blog post objects
-  const data = blogs;
+  const numSorted = [...blogs].sort((a, b) => {
+    return b.id - a.id;
+  });
 
-  // Optionally, you can sort the blog posts by some criteria if needed
-  data.sort((a, b) => b.id - a.id);
+  const alphaSorted = [...blogs].sort((a, b) => {
+    const textA = a.title.toUpperCase();
+    const textB = b.title.toUpperCase();
+    return textA < textB ? -1 : textA > textB ? 1 : 0;
+  });
+
+  const options = ["a - z", "recent"];
+  const [data, setData] = useState(numSorted);
+  const [option, setOption] = useState(options[0]);
+
+  function handleClick() {
+    const choice = option === options[0] ? options[1] : options[0];
+    setOption(choice);
+    option === options[1] ? setData(alphaSorted) : setData(numSorted);
+  }
 
   return (
     <div className="section-container tertiary text-light">
       <h1 className="section-subheading"></h1>
       <h1 className="section-heading">Blogs</h1>
       <h2 className="section-subheading">Latest Blogs</h2>
+      <div className="sort-button">
+        <Button variant="dark" onClick={handleClick}>
+          sorted by {option}
+        </Button>
+      </div>
       <div className="blog-preview text-dark">
         {data.map((post) => (
           <Post key={post.id} post={post} />
