@@ -14,9 +14,9 @@ function BlogPreview() {
     <div className="blog-preview text-dark">
       <Post post={data[0]} />
       <Post post={data[1]} />
-      <Button href="/blogs" variant="outline-light">
-        More Posts
-      </Button>
+      <a href="/blogs">
+        <Button variant="outline-light">More Posts</Button>
+      </a>
     </div>
   );
 }
