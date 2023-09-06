@@ -15,7 +15,7 @@ function BlogPreview() {
     <div className="blog-preview text-dark">
       <Post post={data[0]} />
       <Post post={data[1]} />
-      <Link to="\blogs">
+      <Link to="/blogs">
         <Button variant="outline-light">More Posts</Button>
       </Link>
     </div>
