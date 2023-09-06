@@ -10,5 +10,11 @@
     "content": "So just following me writing the first post, my blog page broke. I'm not entirely sure why but I guess it has to do with the number of posts that I have. I'm thinking in future I'll write my posts in a local text file and then have a js function to convert it into this json format and auto id and timestamp it for me.",
     "date": "September 5th 2023",
     "id": 2
+  },
+  {
+    "title": "Plans for Term 3",
+    "content": "Starting next week, I'll officially be in my 3rd term of my 2nd year! It's been an interesting time so far as a student, I've learnt lots and have aims to do even better next term than I did this time round. I'm hoping to invest more time to be curious and come out of it being able to apply the new techniques I've learnt to my own projects like GymDolphin and others that are in the planning stages.\n In terms of concrete goals, I'd like to HD both and also directly use what I've learnt.",
+    "date": "September 7th 2023",
+    "id": 3
   }
 ]

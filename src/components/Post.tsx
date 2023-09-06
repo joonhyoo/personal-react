@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "../styles/post.css";
 
 export interface PostType {
@@ -14,18 +14,24 @@ export interface Props {
 
 function Post(props: Props) {
   const { title, content, date } = props.post;
-  const redirect = useNavigate();
+  const [desc, setContent] = useState(
+    content.split(" ").slice(0, 20).join(" ") + " . . ."
+  );
+  const [isExpanded, setIsExpanded] = useState(false);
+  // handleClick works weird because react updates things after the function is fully run
   function handleClick() {
-    redirect("/blogs");
+    setIsExpanded(!isExpanded);
+    if (isExpanded) {
+      setContent(desc);
+    }
   }
   return (
     <div className="post light" onClick={handleClick}>
       <div className="post-info">
-        <a />
         <h1>{title}</h1>
         <p className="text-misc">{date}</p>
       </div>
-      <p>{content}</p>
+      <div className="post-content">{isExpanded ? content : desc}</div>
     </div>
   );
 }
