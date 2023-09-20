@@ -1,6 +1,7 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import "../styles/general.css";
 import { useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Header() {
   const { pathname } = useLocation();
@@ -17,7 +18,16 @@ function Header() {
             </Nav>
           ) : (
             <Nav>
-              <Navbar.Brand href="/">Home</Navbar.Brand>
+              <HashLink
+                style={{
+                  color: "black",
+                  textDecoration: "none",
+                  fontSize: "16px",
+                }}
+                to={"/#blogs"}
+              >
+                Back
+              </HashLink>
             </Nav>
           )}
         </Navbar.Collapse>

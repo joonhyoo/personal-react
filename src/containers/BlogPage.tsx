@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import blogs from "../assets/posts/blog.json";
 import Post from "../components/Post";
 import { Button } from "react-bootstrap";
@@ -18,10 +18,17 @@ function BlogPage() {
   const [data, setData] = useState(numSorted);
   const [option, setOption] = useState(options[0]);
 
+  useEffect(() => {
+    if (option === options[0]) {
+      setData(alphaSorted);
+    } else {
+      setData(numSorted);
+    }
+  }, [option]);
+
   function handleClick() {
     const choice = option === options[0] ? options[1] : options[0];
     setOption(choice);
-    option === options[1] ? setData(alphaSorted) : setData(numSorted);
   }
 
   return (
