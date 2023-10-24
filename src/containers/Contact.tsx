@@ -7,14 +7,14 @@ function Contact() {
     <div className="socials">
       <div className="link-container">
         <a
-          href="https://www.linkedin.com/in/joonhyoo/"
+          href="https://github.com/joonhyoo"
           target="_blank"
           className="github-button-container"
         >
           <img className="github-button" src={githubLogo} />
         </a>
         <a
-          href="https://github.com/joonhyoo"
+          href="https://www.linkedin.com/in/joonhyoo/"
           target="_blank"
           className="linkedin-button-container"
         >
